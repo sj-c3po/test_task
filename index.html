@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+	<h1>Задание</h1>
+    Написать функцию, которая отдает N-ый элемент последовательности. <br/>
+    Каждый элемент последовательности равен сумме трех предыдущих (1, 1, 2, 4, 7, и т.д.).<br/> Функция должна сохранять в памяти уже элементы и при повторном запросе отдавать из кэша а не вычислять элемент снова.<br/><br/>
+    Проверочный пример:<br/>
+    var seq = getSequence();<br/>
+    seq(1) // 1<br/>
+    seq(3) // 2
+
+    <h1>Получение значений последовательности</h1>
+
+    Начало последовательности:<br/>
+    <pre>[1, 1, 2, 4, 7, 13, 24, 44, 81...]</pre><br/>
+
+    Порядковый номер элемента: <input type="text" id="num"/> <button id="get-element">Go</button> <br/>
+    <i>Записано в кэше: <span id="cache"></span></i><br/>
+    Результат: <span id="result"></span>
+</body>
+</html>
